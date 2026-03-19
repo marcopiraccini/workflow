@@ -706,6 +706,7 @@ jobs:
       service-type: ${{ matrix.world.service-type }}
       env-vars: ${{ matrix.world.env-vars }}
       setup-command: ${{ matrix.world.setup-command }}
+      services: ${{ matrix.world.services }}
     secrets: inherit
 
   # Final job: Aggregate all E2E results and update PR comment
